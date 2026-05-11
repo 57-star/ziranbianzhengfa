@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>自然辩证法刷题</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header>
+    <h1>自然辩证法刷题</h1>
+    <nav class="tabs" aria-label="功能">
+      <button class="tab active" id="bankTab" type="button">所有题库</button>
+      <button class="tab" id="quizTab" type="button">随机出题</button>
+    </nav>
+  </header>
+  <main>
+    <section id="bankView">
+      <div class="toolbar">
+        <input id="search" placeholder="搜索题干、选项、答案、来源" autocomplete="off">
+        <button class="secondary" id="clearSearch" type="button">清空</button>
+      </div>
+      <p class="count" id="bankCount">正在加载题库...</p>
+      <div id="bankList"></div>
+    </section>
+    <section id="quizView" class="hidden">
+      <p class="count" id="score">已答 0 题，正确 0 题</p>
+      <div id="quizCard"></div>
+    </section>
+  </main>
+  <script src="./app.js"></script>
+</body>
+</html>

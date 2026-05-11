@@ -1,0 +1,1511 @@
+[
+  {
+    "id": "choice-1",
+    "type": "选择题",
+    "question": "《自然辩证法》的作者是谁？",
+    "options": {
+      "A": "马克思",
+      "B": "黑格尔",
+      "C": "恩格斯",
+      "D": "康德"
+    },
+    "answer": "C",
+    "correctText": "恩格斯",
+    "source": "选择题.docx/练习题",
+    "note": ""
+  },
+  {
+    "id": "choice-2",
+    "type": "选择题",
+    "question": "下列哪一个不是朴素唯物主义自然观的基本特征？",
+    "options": {
+      "A": "整体性和直观性",
+      "B": "思辨性和臆测性",
+      "C": "自发性和不彻底性",
+      "D": "夸张性和修辞性"
+    },
+    "answer": "D",
+    "correctText": "夸张性和修辞性",
+    "source": "选择题.docx/练习题",
+    "note": ""
+  },
+  {
+    "id": "choice-3",
+    "type": "选择题",
+    "question": "下列哪个人是古代原子论的提出者？",
+    "options": {
+      "A": "苏格拉底",
+      "B": "亚里士多德",
+      "C": "德谟克利特",
+      "D": "毕达哥拉斯"
+    },
+    "answer": "C",
+    "correctText": "德谟克利特",
+    "source": "选择题.docx/练习题",
+    "note": ""
+  },
+  {
+    "id": "choice-4",
+    "type": "选择题",
+    "question": "下列哪一种自然观是马克思主义自然观的当代形态？",
+    "options": {
+      "A": "朴素唯物主义自然观",
+      "B": "机械唯物主义自然观",
+      "C": "系统自然观",
+      "D": "生态自然观"
+    },
+    "answer": "D",
+    "correctText": "生态自然观",
+    "source": "选择题.docx/练习题",
+    "note": "有资料认为系统自然观、生态自然观都属于当代形态；本题按上传选择题答案记D。"
+  },
+  {
+    "id": "choice-5",
+    "type": "选择题",
+    "question": "牛顿的自然观属于下列哪种？",
+    "options": {
+      "A": "朴素唯物主义自然观",
+      "B": "机械论自然观",
+      "C": "系统论自然观",
+      "D": "人工自然观"
+    },
+    "answer": "B",
+    "correctText": "机械论自然观",
+    "source": "选择题.docx/练习题",
+    "note": ""
+  },
+  {
+    "id": "choice-6",
+    "type": "选择题",
+    "question": "以下不属于马克思、恩格斯科学技术思想形成的科学技术基础的是？",
+    "options": {
+      "A": "能量守恒与转化定律",
+      "B": "元素周期律",
+      "C": "细胞学说",
+      "D": "生物进化论"
+    },
+    "answer": "B",
+    "correctText": "元素周期律",
+    "source": "选择题.docx/练习题",
+    "note": ""
+  },
+  {
+    "id": "choice-7",
+    "type": "选择题",
+    "question": "以下不属于西方科学哲学代表性流派的是？",
+    "options": {
+      "A": "逻辑实证主义",
+      "B": "历史主义",
+      "C": "机会主义",
+      "D": "证伪主义"
+    },
+    "answer": "C",
+    "correctText": "机会主义",
+    "source": "选择题.docx/2025秋回忆",
+    "note": ""
+  },
+  {
+    "id": "choice-8",
+    "type": "选择题",
+    "question": "下列关于科学本质特征的理解错误的是？",
+    "options": {
+      "A": "科学是理论化、系统化的知识体系",
+      "B": "科学是产生知识体系的认识活动",
+      "C": "科学是一种文化现象",
+      "D": "科学是人的本质力量的对象化"
+    },
+    "answer": "D",
+    "correctText": "科学是人的本质力量的对象化",
+    "source": "选择题.docx/练习题",
+    "note": ""
+  },
+  {
+    "id": "choice-9",
+    "type": "选择题",
+    "question": "提出“器官投影说”的哲学家是？",
+    "options": {
+      "A": "卡普",
+      "B": "芒福德",
+      "C": "海德格尔",
+      "D": "马尔库塞"
+    },
+    "answer": "A",
+    "correctText": "卡普",
+    "source": "选择题.docx/2025秋回忆",
+    "note": ""
+  },
+  {
+    "id": "choice-10",
+    "type": "选择题",
+    "question": "以下不属于科学知识结构的是？",
+    "options": {
+      "A": "科学事实",
+      "B": "科学假说",
+      "C": "科学实验",
+      "D": "科学理论"
+    },
+    "answer": "C",
+    "correctText": "科学实验",
+    "source": "选择题.docx/练习题",
+    "note": ""
+  },
+  {
+    "id": "choice-11",
+    "type": "选择题",
+    "question": "马克思科学技术方法论的核心是？",
+    "options": {
+      "A": "公理化方法",
+      "B": "分析与归纳",
+      "C": "批判性思维",
+      "D": "辩证思维与系统思维"
+    },
+    "answer": "D",
+    "correctText": "辩证思维与系统思维",
+    "source": "选择题.docx/练习题",
+    "note": ""
+  },
+  {
+    "id": "choice-12",
+    "type": "选择题",
+    "question": "下面哪个不是技术预测的基本类型？",
+    "options": {
+      "A": "顶层设计预测",
+      "B": "类比性预测",
+      "C": "归纳性预测",
+      "D": "演绎性预测"
+    },
+    "answer": "A",
+    "correctText": "顶层设计预测",
+    "source": "选择题.docx/练习题",
+    "note": ""
+  },
+  {
+    "id": "choice-13",
+    "type": "选择题",
+    "question": "著名科学哲学家波普尔强调，科学从什么开始？",
+    "options": {
+      "A": "观察",
+      "B": "实验",
+      "C": "数据",
+      "D": "问题"
+    },
+    "answer": "D",
+    "correctText": "问题",
+    "source": "选择题.docx/历年回忆",
+    "note": ""
+  },
+  {
+    "id": "choice-14",
+    "type": "选择题",
+    "question": "归纳是一种什么方法？",
+    "options": {
+      "A": "从一般性前提推出个别性结论的认识方法",
+      "B": "从个别到一般的推理方法，寻求事物普遍特征的认识方法",
+      "C": "把对象分解为各个部分分别研究考察的方法",
+      "D": "以批判性思考方式质疑和评估思考过程与结果的方法"
+    },
+    "answer": "B",
+    "correctText": "从个别到一般的推理方法，寻求事物普遍特征的认识方法",
+    "source": "选择题.docx/历年回忆",
+    "note": ""
+  },
+  {
+    "id": "choice-15",
+    "type": "选择题",
+    "question": "下面不属于非逻辑思维的是？",
+    "options": {
+      "A": "分析",
+      "B": "直觉",
+      "C": "灵感",
+      "D": "顿悟"
+    },
+    "answer": "A",
+    "correctText": "分析",
+    "source": "选择题.docx/练习题",
+    "note": ""
+  },
+  {
+    "id": "choice-16",
+    "type": "选择题",
+    "question": "以下哪位学者提出了“两种文化”观念？",
+    "options": {
+      "A": "罗伯特·K·默顿",
+      "B": "C.P.斯诺",
+      "C": "海德格尔",
+      "D": "哈贝马斯"
+    },
+    "answer": "B",
+    "correctText": "C.P.斯诺",
+    "source": "选择题.docx/练习题",
+    "note": ""
+  },
+  {
+    "id": "choice-17",
+    "type": "选择题",
+    "question": "技术共同体的最高目标是？",
+    "options": {
+      "A": "人类、社会、经济和谐发展",
+      "B": "人类、社会、自然和谐发展",
+      "C": "人类、自然、经济和谐发展",
+      "D": "社会、自然、经济和谐发展"
+    },
+    "answer": "B",
+    "correctText": "人类、社会、自然和谐发展",
+    "source": "选择题.docx/练习题",
+    "note": ""
+  },
+  {
+    "id": "choice-18",
+    "type": "选择题",
+    "question": "技术文化的核心是？",
+    "options": {
+      "A": "文化至上原则",
+      "B": "技术理性",
+      "C": "技术、文化合理协调",
+      "D": "技术至上原则"
+    },
+    "answer": "B",
+    "correctText": "技术理性",
+    "source": "选择题.docx/练习题",
+    "note": ""
+  },
+  {
+    "id": "choice-19",
+    "type": "选择题",
+    "question": "技术中心论/技术中性论是错误的，对这一观点展开具体分析的学者是？",
+    "options": {
+      "A": "罗伯特·K·默顿",
+      "B": "C.P.斯诺",
+      "C": "海德格尔",
+      "D": "哈贝马斯"
+    },
+    "answer": "C",
+    "correctText": "海德格尔",
+    "source": "选择题.docx/练习题",
+    "note": ""
+  },
+  {
+    "id": "choice-20",
+    "type": "选择题",
+    "question": "以下哪项不属于科学的社会建制化表现形式？",
+    "options": {
+      "A": "十七世纪英国皇家学会和法国皇家学会成立",
+      "B": "亚里士多德逍遥学派",
+      "C": "德国大学实验室制度",
+      "D": "美国大学系和研究生院制度"
+    },
+    "answer": "B",
+    "correctText": "亚里士多德逍遥学派",
+    "source": "选择题.docx/练习题",
+    "note": ""
+  },
+  {
+    "id": "choice-21",
+    "type": "选择题",
+    "question": "法兰克福学派主要观点不包括？",
+    "options": {
+      "A": "现代科学技术把人变成商品的奴隶、消费的奴隶",
+      "B": "现代科学技术具有意识形态功能",
+      "C": "现代科学技术成为独裁手段",
+      "D": "现代科学技术价值中立"
+    },
+    "answer": "D",
+    "correctText": "现代科学技术价值中立",
+    "source": "选择题.docx/2025秋回忆",
+    "note": ""
+  },
+  {
+    "id": "choice-22",
+    "type": "选择题",
+    "question": "科学技术的社会建制要素不包括？",
+    "options": {
+      "A": "组织机构",
+      "B": "社会体制",
+      "C": "合作机构/合作机制",
+      "D": "行为规范"
+    },
+    "answer": "C",
+    "correctText": "合作机构/合作机制",
+    "source": "选择题.docx/2025秋回忆",
+    "note": ""
+  },
+  {
+    "id": "choice-23",
+    "type": "选择题",
+    "question": "《十七世纪英格兰的科学、技术与社会》开创科学社会学研究新领域，该论著出自谁？",
+    "options": {
+      "A": "罗伯特·K·默顿",
+      "B": "C.P.斯诺",
+      "C": "海德格尔",
+      "D": "哈贝马斯"
+    },
+    "answer": "A",
+    "correctText": "罗伯特·K·默顿",
+    "source": "选择题.docx/练习题",
+    "note": ""
+  },
+  {
+    "id": "choice-24",
+    "type": "选择题",
+    "question": "清教文化对哪个国家历史上的科学革命有巨大影响？",
+    "options": {
+      "A": "意大利",
+      "B": "法国",
+      "C": "英国",
+      "D": "德国"
+    },
+    "answer": "C",
+    "correctText": "英国",
+    "source": "2025秋真题回忆图",
+    "note": ""
+  },
+  {
+    "id": "choice-25",
+    "type": "选择题",
+    "question": "默顿的科学共同体内部行为规范不包括？",
+    "options": {
+      "A": "普遍主义",
+      "B": "公有主义",
+      "C": "权威主义",
+      "D": "无私利主义"
+    },
+    "answer": "C",
+    "correctText": "权威主义",
+    "source": "2025秋真题回忆图",
+    "note": ""
+  },
+  {
+    "id": "choice-26",
+    "type": "选择题",
+    "question": "辩证唯物主义的科学基础不包括？",
+    "options": {
+      "A": "康德的星云假说",
+      "B": "维勒的人工合成尿素",
+      "C": "麦克斯韦的电磁场理论",
+      "D": "爱因斯坦的相对论"
+    },
+    "answer": "D",
+    "correctText": "爱因斯坦的相对论",
+    "source": "2025秋真题回忆图",
+    "note": ""
+  },
+  {
+    "id": "choice-27",
+    "type": "选择题",
+    "question": "《第三次浪潮》的作者是？",
+    "options": {
+      "A": "托夫勒",
+      "B": "万·布什",
+      "C": "赫拉克利特",
+      "D": "直觉"
+    },
+    "answer": "A",
+    "correctText": "托夫勒",
+    "source": "2025秋真题回忆图/原代码",
+    "note": ""
+  },
+  {
+    "id": "choice-28",
+    "type": "选择题",
+    "question": "《耗散论》或耗散结构理论是谁提出的？",
+    "options": {
+      "A": "石里克",
+      "B": "阿奎那",
+      "C": "C.P.斯诺",
+      "D": "普利高津（普里戈金）"
+    },
+    "answer": "D",
+    "correctText": "普利高津（普里戈金）",
+    "source": "2025秋真题回忆图/历年回忆",
+    "note": ""
+  },
+  {
+    "id": "choice-29",
+    "type": "选择题",
+    "question": "卡逊是下列哪本书的作者？",
+    "options": {
+      "A": "《寂静的春天》",
+      "B": "《增长的极限》",
+      "C": "《科学革命的结构》",
+      "D": "《科学的社会功能》"
+    },
+    "answer": "A",
+    "correctText": "《寂静的春天》",
+    "source": "2021/2023/2024/2025回忆",
+    "note": ""
+  },
+  {
+    "id": "choice-30",
+    "type": "选择题",
+    "question": "实证主义是下列哪位科学家/思想家提出的？",
+    "options": {
+      "A": "库恩",
+      "B": "波普尔",
+      "C": "石里克",
+      "D": "孔德"
+    },
+    "answer": "D",
+    "correctText": "孔德",
+    "source": "2021/2023回忆",
+    "note": ""
+  },
+  {
+    "id": "choice-31",
+    "type": "选择题",
+    "question": "“知识就是力量”是哪位思想家提出来的？",
+    "options": {
+      "A": "罗吉尔·培根",
+      "B": "弗朗西斯·培根",
+      "C": "阿奎那",
+      "D": "伽利略"
+    },
+    "answer": "B",
+    "correctText": "弗朗西斯·培根",
+    "source": "2021/2023回忆",
+    "note": ""
+  },
+  {
+    "id": "choice-32",
+    "type": "选择题",
+    "question": "《科学，无止境的前沿》是哪位科学家的作品？",
+    "options": {
+      "A": "万·布什",
+      "B": "爱因斯坦",
+      "C": "库恩",
+      "D": "贝尔纳"
+    },
+    "answer": "A",
+    "correctText": "万·布什",
+    "source": "2021/2023回忆",
+    "note": ""
+  },
+  {
+    "id": "choice-33",
+    "type": "选择题",
+    "question": "下列哪个机构率先给科学家提供薪水？",
+    "options": {
+      "A": "英国皇家学会",
+      "B": "法国科学院",
+      "C": "瑞典科学院",
+      "D": "美国科学院"
+    },
+    "answer": "B",
+    "correctText": "法国科学院",
+    "source": "2021回忆",
+    "note": "按当前确认口径：正确答案为法国科学院。"
+  },
+  {
+    "id": "choice-34",
+    "type": "选择题",
+    "question": "“耗散结构理论”是由哪位学者提出的？",
+    "options": {
+      "A": "普利高津",
+      "B": "哈肯",
+      "C": "托姆",
+      "D": "牛顿"
+    },
+    "answer": "A",
+    "correctText": "普利高津",
+    "source": "2021/2024/2025回忆",
+    "note": ""
+  },
+  {
+    "id": "choice-35",
+    "type": "选择题",
+    "question": "波普尔“证伪主义”的论证方式是？",
+    "options": {
+      "A": "否定前件式",
+      "B": "否定后件式",
+      "C": "肯定前件式",
+      "D": "肯定后件式"
+    },
+    "answer": "B",
+    "correctText": "否定后件式",
+    "source": "2021/2023/2024回忆",
+    "note": ""
+  },
+  {
+    "id": "choice-36",
+    "type": "选择题",
+    "question": "“世界的本源是由无限构成的”是由哪位哲学家首先提出来的？",
+    "options": {
+      "A": "苏格拉底",
+      "B": "毕达哥拉斯",
+      "C": "泰勒斯",
+      "D": "阿那克西曼德"
+    },
+    "answer": "D",
+    "correctText": "阿那克西曼德",
+    "source": "2021回忆/2025照片",
+    "note": ""
+  },
+  {
+    "id": "choice-37",
+    "type": "选择题",
+    "question": "《科学史及其与哲学和宗教的关系》的作者是？",
+    "options": {
+      "A": "石里克",
+      "B": "丹皮尔",
+      "C": "合作机构/合作机制",
+      "D": "科学是人的本质力量的对象化"
+    },
+    "answer": "B",
+    "correctText": "丹皮尔",
+    "source": "2021回忆/2025照片",
+    "note": ""
+  },
+  {
+    "id": "choice-38",
+    "type": "选择题",
+    "question": "“第三次浪潮”指的是？",
+    "options": {
+      "A": "卡逊",
+      "B": "波普尔",
+      "C": "信息革命",
+      "D": "自发性和不彻底性"
+    },
+    "answer": "C",
+    "correctText": "信息革命",
+    "source": "2021回忆/2025照片",
+    "note": ""
+  },
+  {
+    "id": "choice-39",
+    "type": "选择题",
+    "question": "演绎方法的基本方向是？",
+    "options": {
+      "A": "从一般到个别",
+      "B": "工业革命",
+      "C": "从个别到一般的推理方法，寻求事物普遍特征的认识方法",
+      "D": "无私利主义"
+    },
+    "answer": "A",
+    "correctText": "从一般到个别",
+    "source": "2024.12回忆",
+    "note": ""
+  },
+  {
+    "id": "choice-40",
+    "type": "选择题",
+    "question": "科学研究纲领是谁提出的？",
+    "options": {
+      "A": "拉卡托斯",
+      "B": "科学是一种文化现象",
+      "C": "马尔库塞",
+      "D": "C.P.斯诺"
+    },
+    "answer": "A",
+    "correctText": "拉卡托斯",
+    "source": "2023/2024/2025回忆",
+    "note": ""
+  },
+  {
+    "id": "choice-41",
+    "type": "选择题",
+    "question": "范式概念是谁提出的？",
+    "options": {
+      "A": "库恩",
+      "B": "因果关系",
+      "C": "普遍主义",
+      "D": "赫拉克利特"
+    },
+    "answer": "A",
+    "correctText": "库恩",
+    "source": "2023/2024回忆",
+    "note": ""
+  },
+  {
+    "id": "choice-42",
+    "type": "选择题",
+    "question": "哪一项不属于顿悟？",
+    "options": {
+      "A": "计划性",
+      "B": "科学是人的本质力量的对象化",
+      "C": "19世纪末到20世纪初",
+      "D": "执着"
+    },
+    "answer": "A",
+    "correctText": "计划性",
+    "source": "2023/2024/2025照片",
+    "note": ""
+  },
+  {
+    "id": "choice-43",
+    "type": "选择题",
+    "question": "《大地的伦理》作者是谁？",
+    "options": {
+      "A": "利奥波德",
+      "B": "直觉",
+      "C": "爱因斯坦",
+      "D": "否定前件式"
+    },
+    "answer": "A",
+    "correctText": "利奥波德",
+    "source": "2024/2025照片",
+    "note": ""
+  },
+  {
+    "id": "choice-44",
+    "type": "选择题",
+    "question": "创新理论是谁最先提出的？",
+    "options": {
+      "A": "麦克斯韦的电磁场理论",
+      "B": "米杜斯",
+      "C": "现代科学技术把人变成商品的奴隶、消费的奴隶",
+      "D": "熊彼特"
+    },
+    "answer": "D",
+    "correctText": "熊彼特",
+    "source": "2023/2024/2025照片",
+    "note": ""
+  },
+  {
+    "id": "choice-45",
+    "type": "选择题",
+    "question": "提出“水是万物本原/本源”的是谁？",
+    "options": {
+      "A": "归纳性预测",
+      "B": "计划性",
+      "C": "瑞典科学院",
+      "D": "泰勒斯"
+    },
+    "answer": "D",
+    "correctText": "泰勒斯",
+    "source": "2023/2024/2025照片",
+    "note": ""
+  },
+  {
+    "id": "choice-46",
+    "type": "选择题",
+    "question": "《单向度的人》最可能对应哪个时期？",
+    "options": {
+      "A": "工业革命",
+      "B": "阿那克西曼德",
+      "C": "托姆",
+      "D": "布什/拉什"
+    },
+    "answer": "A",
+    "correctText": "工业革命",
+    "source": "2024.5回忆/2025照片",
+    "note": ""
+  },
+  {
+    "id": "choice-47",
+    "type": "选择题",
+    "question": "科学社会学之父是谁？",
+    "options": {
+      "A": "《增长的极限》",
+      "B": "丹尼尔贝尔",
+      "C": "罗伯特·K·默顿",
+      "D": "丹皮尔"
+    },
+    "answer": "C",
+    "correctText": "罗伯特·K·默顿",
+    "source": "2024.5回忆/2025照片",
+    "note": ""
+  },
+  {
+    "id": "choice-48",
+    "type": "选择题",
+    "question": "科学革命论、范式、历史主义模式主要对应哪位学者？",
+    "options": {
+      "A": "亚里士多德",
+      "B": "历史主义",
+      "C": "库恩",
+      "D": "开放系统"
+    },
+    "answer": "C",
+    "correctText": "库恩",
+    "source": "2023.5回忆",
+    "note": ""
+  },
+  {
+    "id": "choice-49",
+    "type": "选择题",
+    "question": "《增长的极限》由哪个机构报告/提出？",
+    "options": {
+      "A": "爱因斯坦",
+      "B": "德谟克利特",
+      "C": "罗马俱乐部",
+      "D": "归纳性预测"
+    },
+    "answer": "C",
+    "correctText": "罗马俱乐部",
+    "source": "2024.5回忆/2025照片",
+    "note": ""
+  },
+  {
+    "id": "choice-50",
+    "type": "选择题",
+    "question": "耗散结构不包含以下哪个要素？",
+    "options": {
+      "A": "非线性相互作用",
+      "B": "非平衡态",
+      "C": "因果关系",
+      "D": "开放系统"
+    },
+    "answer": "C",
+    "correctText": "因果关系",
+    "source": "2024.5回忆",
+    "note": "原回忆写'不保证正确'，这里按上传回忆中笔者选择整理。"
+  },
+  {
+    "id": "choice-51",
+    "type": "选择题",
+    "question": "下面哪种品质不适合把握机遇？",
+    "options": {
+      "A": "敏锐的洞察力",
+      "B": "科学的想象力",
+      "C": "较强的判断力",
+      "D": "执着"
+    },
+    "answer": "D",
+    "correctText": "执着",
+    "source": "2024.5回忆",
+    "note": "原回忆注明'不保证正确'，C项为根据题意补全。"
+  },
+  {
+    "id": "choice-52",
+    "type": "选择题",
+    "question": "地心说由谁提出？",
+    "options": {
+      "A": "托勒密",
+      "B": "德国大学实验室制度",
+      "C": "文化至上原则",
+      "D": "类比性预测"
+    },
+    "answer": "A",
+    "correctText": "托勒密",
+    "source": "2023.5考后回忆/原代码",
+    "note": ""
+  },
+  {
+    "id": "choice-53",
+    "type": "选择题",
+    "question": "第二次工业革命时间大致是？",
+    "options": {
+      "A": "阿那克萨戈拉",
+      "B": "罗伯特.K.默顿",
+      "C": "现代科学技术价值中立",
+      "D": "19世纪末到20世纪初"
+    },
+    "answer": "D",
+    "correctText": "19世纪末到20世纪初",
+    "source": "2023/2025照片",
+    "note": ""
+  },
+  {
+    "id": "choice-54",
+    "type": "选择题",
+    "question": "技术自主论的代表人物是谁？",
+    "options": {
+      "A": "雅克·埃吕尔",
+      "B": "罗伯特E莱恩",
+      "C": "维勒的人工合成尿素",
+      "D": "问题"
+    },
+    "answer": "A",
+    "correctText": "雅克·埃吕尔",
+    "source": "2025照片/原代码",
+    "note": ""
+  },
+  {
+    "id": "choice-55",
+    "type": "选择题",
+    "question": "机械唯物主义自然观大致诞生于哪个世纪？",
+    "options": {
+      "A": "公有主义",
+      "B": "16—18世纪",
+      "C": "爱因斯坦",
+      "D": "贝尔纳"
+    },
+    "answer": "B",
+    "correctText": "16—18世纪",
+    "source": "原代码/常考点",
+    "note": ""
+  },
+  {
+    "id": "matching-1",
+    "type": "匹配题",
+    "question": "实证主义",
+    "options": {
+      "A": "孔德"
+    },
+    "answer": "A",
+    "correctText": "孔德",
+    "source": "观点-人物/答案匹配题",
+    "note": ""
+  },
+  {
+    "id": "matching-2",
+    "type": "匹配题",
+    "question": "世界本源是由水构成的",
+    "options": {
+      "A": "泰勒斯"
+    },
+    "answer": "A",
+    "correctText": "泰勒斯",
+    "source": "观点-人物/答案匹配题",
+    "note": ""
+  },
+  {
+    "id": "matching-3",
+    "type": "匹配题",
+    "question": "科学发展模式为“P-TT-EE-P”&证伪主义（否定后件式）",
+    "options": {
+      "A": "波普尔"
+    },
+    "answer": "A",
+    "correctText": "波普尔",
+    "source": "观点-人物/答案匹配题",
+    "note": ""
+  },
+  {
+    "id": "matching-4",
+    "type": "匹配题",
+    "question": "知识就是力量",
+    "options": {
+      "A": "弗朗西斯·培根"
+    },
+    "answer": "A",
+    "correctText": "弗朗西斯·培根",
+    "source": "观点-人物/答案匹配题",
+    "note": ""
+  },
+  {
+    "id": "matching-5",
+    "type": "匹配题",
+    "question": "机械唯物自然观的时间段",
+    "options": {
+      "A": "16-18世纪"
+    },
+    "answer": "A",
+    "correctText": "16-18世纪",
+    "source": "观点-人物/答案匹配题",
+    "note": ""
+  },
+  {
+    "id": "matching-6",
+    "type": "匹配题",
+    "question": "地心主义/地心说",
+    "options": {
+      "A": "托勒密"
+    },
+    "answer": "A",
+    "correctText": "托勒密",
+    "source": "观点-人物/答案匹配题",
+    "note": ""
+  },
+  {
+    "id": "matching-7",
+    "type": "匹配题",
+    "question": "世界本源是由无限构成的",
+    "options": {
+      "A": "阿那克西曼德"
+    },
+    "answer": "A",
+    "correctText": "阿那克西曼德",
+    "source": "观点-人物/答案匹配题",
+    "note": ""
+  },
+  {
+    "id": "matching-8",
+    "type": "匹配题",
+    "question": "《科学：无尽的前沿》",
+    "options": {
+      "A": "布什/拉什"
+    },
+    "answer": "A",
+    "correctText": "布什/拉什",
+    "source": "观点-人物/答案匹配题",
+    "note": ""
+  },
+  {
+    "id": "matching-9",
+    "type": "匹配题",
+    "question": "《自然辩证法》",
+    "options": {
+      "A": "恩格斯"
+    },
+    "answer": "A",
+    "correctText": "恩格斯",
+    "source": "观点-人物/答案匹配题",
+    "note": ""
+  },
+  {
+    "id": "matching-10",
+    "type": "匹配题",
+    "question": "“星云假说”",
+    "options": {
+      "A": "康德"
+    },
+    "answer": "A",
+    "correctText": "康德",
+    "source": "观点-人物/答案匹配题",
+    "note": ""
+  },
+  {
+    "id": "matching-11",
+    "type": "匹配题",
+    "question": "“器官投影说” ：人和观点对应起来",
+    "options": {
+      "A": "恩斯特·卡普"
+    },
+    "answer": "A",
+    "correctText": "恩斯特·卡普",
+    "source": "观点-人物/答案匹配题",
+    "note": ""
+  },
+  {
+    "id": "matching-12",
+    "type": "匹配题",
+    "question": "《两种文化》(科学文化与人文文化)",
+    "options": {
+      "A": "C.P.斯诺"
+    },
+    "answer": "A",
+    "correctText": "C.P.斯诺",
+    "source": "观点-人物/答案匹配题",
+    "note": ""
+  },
+  {
+    "id": "matching-13",
+    "type": "匹配题",
+    "question": "具体分析“技术中心论”是错误的",
+    "options": {
+      "A": "海德格尔"
+    },
+    "answer": "A",
+    "correctText": "海德格尔",
+    "source": "观点-人物/答案匹配题",
+    "note": ""
+  },
+  {
+    "id": "matching-14",
+    "type": "匹配题",
+    "question": "《十七世纪英格兰的科学、技术与社会》开创科学社会学研究的新领域",
+    "options": {
+      "A": "罗伯特.K.默顿"
+    },
+    "answer": "A",
+    "correctText": "罗伯特.K.默顿",
+    "source": "观点-人物/答案匹配题",
+    "note": ""
+  },
+  {
+    "id": "matching-15",
+    "type": "匹配题",
+    "question": "《寂静的春天》",
+    "options": {
+      "A": "卡逊"
+    },
+    "answer": "A",
+    "correctText": "卡逊",
+    "source": "观点-人物/答案匹配题",
+    "note": ""
+  },
+  {
+    "id": "matching-16",
+    "type": "匹配题",
+    "question": "《增长的极限》",
+    "options": {
+      "A": "米杜斯"
+    },
+    "answer": "A",
+    "correctText": "米杜斯",
+    "source": "观点-人物/答案匹配题",
+    "note": ""
+  },
+  {
+    "id": "matching-17",
+    "type": "匹配题",
+    "question": "国家创新体系",
+    "options": {
+      "A": "弗里曼"
+    },
+    "answer": "A",
+    "correctText": "弗里曼",
+    "source": "观点-人物/答案匹配题",
+    "note": ""
+  },
+  {
+    "id": "matching-18",
+    "type": "匹配题",
+    "question": "演绎-律则模型（DN模型）",
+    "options": {
+      "A": "亨普尔"
+    },
+    "answer": "A",
+    "correctText": "亨普尔",
+    "source": "观点-人物/答案匹配题",
+    "note": ""
+  },
+  {
+    "id": "matching-19",
+    "type": "匹配题",
+    "question": "（机械观）数原本论",
+    "options": {
+      "A": "毕达哥拉斯"
+    },
+    "answer": "A",
+    "correctText": "毕达哥拉斯",
+    "source": "观点-人物/答案匹配题",
+    "note": ""
+  },
+  {
+    "id": "matching-20",
+    "type": "匹配题",
+    "question": "古代原子论",
+    "options": {
+      "A": "德谟克里特"
+    },
+    "answer": "A",
+    "correctText": "德谟克里特",
+    "source": "观点-人物/答案匹配题",
+    "note": ""
+  },
+  {
+    "id": "matching-21",
+    "type": "匹配题",
+    "question": "地动说",
+    "options": {
+      "A": "阿里斯塔克"
+    },
+    "answer": "A",
+    "correctText": "阿里斯塔克",
+    "source": "观点-人物/答案匹配题",
+    "note": ""
+  },
+  {
+    "id": "matching-22",
+    "type": "匹配题",
+    "question": "位移运动说",
+    "options": {
+      "A": "亚里士多德"
+    },
+    "answer": "A",
+    "correctText": "亚里士多德",
+    "source": "观点-人物/答案匹配题",
+    "note": ""
+  },
+  {
+    "id": "matching-23",
+    "type": "匹配题",
+    "question": "地质“渐变论”",
+    "options": {
+      "A": "赖尔"
+    },
+    "answer": "A",
+    "correctText": "赖尔",
+    "source": "观点-人物/答案匹配题",
+    "note": ""
+  },
+  {
+    "id": "matching-24",
+    "type": "匹配题",
+    "question": "《单向度的人》",
+    "options": {
+      "A": "马尔库塞"
+    },
+    "answer": "A",
+    "correctText": "马尔库塞",
+    "source": "观点-人物/答案匹配题",
+    "note": ""
+  },
+  {
+    "id": "matching-25",
+    "type": "匹配题",
+    "question": "机械唯物主义自然观诞生于哪个世纪？",
+    "options": {
+      "A": "16-18世纪"
+    },
+    "answer": "A",
+    "correctText": "16-18世纪",
+    "source": "观点-人物/答案匹配题",
+    "note": ""
+  },
+  {
+    "id": "matching-26",
+    "type": "匹配题",
+    "question": "耗散结构理论",
+    "options": {
+      "A": "伊里亚·普里戈金"
+    },
+    "answer": "A",
+    "correctText": "伊里亚·普里戈金",
+    "source": "观点-人物/答案匹配题",
+    "note": ""
+  },
+  {
+    "id": "matching-27",
+    "type": "匹配题",
+    "question": "《科学史及其与哲学和宗教的关系》",
+    "options": {
+      "A": "西耳·丹皮尔"
+    },
+    "answer": "A",
+    "correctText": "西耳·丹皮尔",
+    "source": "观点-人物/答案匹配题",
+    "note": ""
+  },
+  {
+    "id": "matching-28",
+    "type": "匹配题",
+    "question": "《第三次浪潮》是信息革命阶段",
+    "options": {
+      "A": "托夫勒"
+    },
+    "answer": "A",
+    "correctText": "托夫勒",
+    "source": "观点-人物/答案匹配题",
+    "note": ""
+  },
+  {
+    "id": "matching-29",
+    "type": "匹配题",
+    "question": "在《1844年经济学哲学手稿》中首次提出“劳动异化”的概念",
+    "options": {
+      "A": "马克思"
+    },
+    "answer": "A",
+    "correctText": "马克思",
+    "source": "观点-人物/答案匹配题",
+    "note": ""
+  },
+  {
+    "id": "matching-30",
+    "type": "匹配题",
+    "question": "逻辑实证主义",
+    "options": {
+      "A": "维特根斯坦"
+    },
+    "answer": "A",
+    "correctText": "维特根斯坦",
+    "source": "观点-人物/答案匹配题",
+    "note": ""
+  },
+  {
+    "id": "matching-31",
+    "type": "匹配题",
+    "question": "证伪主义",
+    "options": {
+      "A": "波珀"
+    },
+    "answer": "A",
+    "correctText": "波珀",
+    "source": "观点-人物/答案匹配题",
+    "note": ""
+  },
+  {
+    "id": "matching-32",
+    "type": "匹配题",
+    "question": "精致证伪主义",
+    "options": {
+      "A": "拉卡托斯"
+    },
+    "answer": "A",
+    "correctText": "拉卡托斯",
+    "source": "观点-人物/答案匹配题",
+    "note": ""
+  },
+  {
+    "id": "matching-33",
+    "type": "匹配题",
+    "question": "历史主义",
+    "options": {
+      "A": "库恩"
+    },
+    "answer": "A",
+    "correctText": "库恩",
+    "source": "观点-人物/答案匹配题",
+    "note": ""
+  },
+  {
+    "id": "matching-34",
+    "type": "匹配题",
+    "question": "《后工业社会》",
+    "options": {
+      "A": "丹尼尔贝尔"
+    },
+    "answer": "A",
+    "correctText": "丹尼尔贝尔",
+    "source": "观点-人物/答案匹配题",
+    "note": ""
+  },
+  {
+    "id": "matching-35",
+    "type": "匹配题",
+    "question": "《知识社会》",
+    "options": {
+      "A": "罗伯特E莱恩"
+    },
+    "answer": "A",
+    "correctText": "罗伯特E莱恩",
+    "source": "观点-人物/答案匹配题",
+    "note": ""
+  },
+  {
+    "id": "matching-36",
+    "type": "匹配题",
+    "question": "第一个提出发工资/提供经费支持",
+    "options": {
+      "A": "法兰西皇家科学院"
+    },
+    "answer": "A",
+    "correctText": "法兰西皇家科学院",
+    "source": "观点-人物/答案匹配题",
+    "note": ""
+  },
+  {
+    "id": "matching-37",
+    "type": "匹配题",
+    "question": "第一个建立系和研究生院制度",
+    "options": {
+      "A": "美国"
+    },
+    "answer": "A",
+    "correctText": "美国",
+    "source": "观点-人物/答案匹配题",
+    "note": ""
+  },
+  {
+    "id": "matching-38",
+    "type": "匹配题",
+    "question": "“种子说”",
+    "options": {
+      "A": "阿那克萨戈拉"
+    },
+    "answer": "A",
+    "correctText": "阿那克萨戈拉",
+    "source": "观点-人物/答案匹配题",
+    "note": ""
+  },
+  {
+    "id": "matching-39",
+    "type": "匹配题",
+    "question": "“火本原说“",
+    "options": {
+      "A": "赫拉克利特"
+    },
+    "answer": "A",
+    "correctText": "赫拉克利特",
+    "source": "观点-人物/答案匹配题",
+    "note": ""
+  },
+  {
+    "id": "matching-40",
+    "type": "匹配题",
+    "question": "技术自主论代表",
+    "options": {
+      "A": "雅克·埃吕尔"
+    },
+    "answer": "A",
+    "correctText": "雅克·埃吕尔",
+    "source": "观点-人物/答案匹配题",
+    "note": ""
+  },
+  {
+    "id": "matching-41",
+    "type": "匹配题",
+    "question": "范式概念/科学革命论/历史主义模式",
+    "options": {
+      "A": "库恩"
+    },
+    "answer": "A",
+    "correctText": "库恩",
+    "source": "观点-人物/答案匹配题",
+    "note": ""
+  },
+  {
+    "id": "matching-42",
+    "type": "匹配题",
+    "question": "科学研究纲领",
+    "options": {
+      "A": "拉卡托斯"
+    },
+    "answer": "A",
+    "correctText": "拉卡托斯",
+    "source": "观点-人物/答案匹配题",
+    "note": ""
+  },
+  {
+    "id": "matching-43",
+    "type": "匹配题",
+    "question": "科学社会学之父",
+    "options": {
+      "A": "罗伯特·K·默顿"
+    },
+    "answer": "A",
+    "correctText": "罗伯特·K·默顿",
+    "source": "观点-人物/答案匹配题",
+    "note": ""
+  },
+  {
+    "id": "matching-44",
+    "type": "匹配题",
+    "question": "《大地的伦理》",
+    "options": {
+      "A": "利奥波德"
+    },
+    "answer": "A",
+    "correctText": "利奥波德",
+    "source": "观点-人物/答案匹配题",
+    "note": ""
+  },
+  {
+    "id": "matching-45",
+    "type": "匹配题",
+    "question": "《增长的极限》报告机构",
+    "options": {
+      "A": "罗马俱乐部"
+    },
+    "answer": "A",
+    "correctText": "罗马俱乐部",
+    "source": "观点-人物/答案匹配题",
+    "note": ""
+  },
+  {
+    "id": "matching-46",
+    "type": "匹配题",
+    "question": "演绎方法",
+    "options": {
+      "A": "从一般到个别"
+    },
+    "answer": "A",
+    "correctText": "从一般到个别",
+    "source": "观点-人物/答案匹配题",
+    "note": ""
+  },
+  {
+    "id": "matching-47",
+    "type": "匹配题",
+    "question": "归纳方法",
+    "options": {
+      "A": "从个别到一般"
+    },
+    "answer": "A",
+    "correctText": "从个别到一般",
+    "source": "观点-人物/答案匹配题",
+    "note": ""
+  },
+  {
+    "id": "matching-48",
+    "type": "匹配题",
+    "question": "科学从什么开始",
+    "options": {
+      "A": "问题"
+    },
+    "answer": "A",
+    "correctText": "问题",
+    "source": "观点-人物/答案匹配题",
+    "note": ""
+  },
+  {
+    "id": "matching-49",
+    "type": "匹配题",
+    "question": "不属于顿悟的特征",
+    "options": {
+      "A": "计划性"
+    },
+    "answer": "A",
+    "correctText": "计划性",
+    "source": "观点-人物/答案匹配题",
+    "note": ""
+  },
+  {
+    "id": "matching-50",
+    "type": "匹配题",
+    "question": "第二次工业革命时间",
+    "options": {
+      "A": "19世纪末到20世纪初"
+    },
+    "answer": "A",
+    "correctText": "19世纪末到20世纪初",
+    "source": "观点-人物/答案匹配题",
+    "note": ""
+  },
+  {
+    "id": "matching-51",
+    "type": "匹配题",
+    "question": "“第三次浪潮”指的是",
+    "options": {
+      "A": "信息革命"
+    },
+    "answer": "A",
+    "correctText": "信息革命",
+    "source": "观点-人物/答案匹配题",
+    "note": ""
+  },
+  {
+    "id": "matching-52",
+    "type": "匹配题",
+    "question": "《第三次浪潮》的作者",
+    "options": {
+      "A": "托夫勒"
+    },
+    "answer": "A",
+    "correctText": "托夫勒",
+    "source": "观点-人物/答案匹配题",
+    "note": ""
+  },
+  {
+    "id": "matching-53",
+    "type": "匹配题",
+    "question": "《科学，无止境的前沿》",
+    "options": {
+      "A": "万·布什"
+    },
+    "answer": "A",
+    "correctText": "万·布什",
+    "source": "观点-人物/答案匹配题",
+    "note": ""
+  },
+  {
+    "id": "matching-54",
+    "type": "匹配题",
+    "question": "波普尔证伪主义的论证方式",
+    "options": {
+      "A": "否定后件式"
+    },
+    "answer": "A",
+    "correctText": "否定后件式",
+    "source": "观点-人物/答案匹配题",
+    "note": ""
+  },
+  {
+    "id": "matching-55",
+    "type": "匹配题",
+    "question": "清教文化影响最大的科学革命国家",
+    "options": {
+      "A": "英国"
+    },
+    "answer": "A",
+    "correctText": "英国",
+    "source": "观点-人物/答案匹配题",
+    "note": ""
+  },
+  {
+    "id": "matching-56",
+    "type": "匹配题",
+    "question": "默顿科学共同体内部行为规范不包括",
+    "options": {
+      "A": "权威主义"
+    },
+    "answer": "A",
+    "correctText": "权威主义",
+    "source": "观点-人物/答案匹配题",
+    "note": ""
+  },
+  {
+    "id": "matching-57",
+    "type": "匹配题",
+    "question": "辩证唯物主义科学基础不包括",
+    "options": {
+      "A": "爱因斯坦的相对论"
+    },
+    "answer": "A",
+    "correctText": "爱因斯坦的相对论",
+    "source": "观点-人物/答案匹配题",
+    "note": ""
+  }
+]
