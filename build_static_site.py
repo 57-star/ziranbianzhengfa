@@ -1,4 +1,6 @@
 import json
+import random
+import re
 from pathlib import Path
 
 import ziranbianzhengfa_v3_all_choices as bank
@@ -8,13 +10,235 @@ ROOT = Path(__file__).resolve().parent
 OUT_DIR = ROOT / "docs"
 
 
+PERSON_HINTS = (
+    "孔德", "泰勒斯", "波普尔", "培根", "托勒密", "阿那克西曼德", "布什", "拉什", "恩格斯",
+    "康德", "卡普", "斯诺", "海德格尔", "默顿", "卡逊", "米都斯", "弗里曼", "亨普尔",
+    "毕达哥拉斯", "德谟克利特", "阿里斯塔克", "亚里士多德", "赖尔", "马尔库塞", "普利高津",
+    "丹皮尔", "托夫勒", "马克思", "维特根斯坦", "彭加勒", "拉卡托斯", "库恩", "贝尔",
+    "莱恩", "阿那克萨戈拉", "赫拉克利特", "雅克", "埃吕尔", "利奥波德", "法兰西", "熊彼特",
+    "哈肯", "托姆", "牛顿", "苏格拉底", "爱因斯坦", "贝尔纳", "罗伯特", "门捷列夫",
+    "米杜斯", "波珀", "德谟克里特", "普里戈金", "伽利略", "阿奎那", "芒福德", "石里克",
+    "维勒", "麦克斯韦", "哥白尼", "开普勒",
+)
+
+INSTITUTION_HINTS = ("科学院", "皇家学会", "俱乐部", "国家", "美国", "英国", "法国", "德国", "瑞典")
+TIME_HINTS = ("世纪", "时期", "革命", "年代", "年", "16", "17", "18", "19", "20")
+METHOD_HINTS = ("从一般到个别", "从个别到一般", "否定后件式", "P-TT-EE-P", "DN模型")
+WORK_HINTS = ("《", "》")
+NATURE_VIEW_HINTS = ("自然观", "地心说", "原子论", "水本原", "火本原", "种子说", "地动说")
+SCIENCE_THEORY_HINTS = (
+    "相对论", "进化论", "细胞学说", "能量守恒", "元素周期律", "三大发现",
+    "星云假说", "人工合成尿素", "电磁场理论",
+)
+
+TOPIC_OPTION_OVERRIDES = (
+    ("《第三次浪潮》的作者", ["托夫勒", "丹尼尔贝尔", "万·布什", "库恩"]),
+    ("耗散", ["普利高津（普里戈金）", "哈肯", "托姆", "贝尔纳"]),
+    ("《科学史及其与哲学和宗教的关系》", ["丹皮尔", "贝尔纳", "罗伯特·K·默顿", "库恩"]),
+    ("“第三次浪潮”指", ["信息革命", "工业革命", "科学革命", "农业革命"]),
+    ("演绎方法的基本方向", ["从一般到个别", "从个别到一般", "从特殊到特殊", "从经验到假说"]),
+    ("科学研究纲领", ["拉卡托斯", "库恩", "波普尔", "维特根斯坦"]),
+    ("范式概念", ["库恩", "波普尔", "拉卡托斯", "罗伯特·K·默顿"]),
+    ("不属于顿悟", ["计划性", "突发性", "直觉性", "灵感性"]),
+    ("《大地的伦理》作者", ["利奥波德", "卡逊", "康德", "海德格尔"]),
+    ("创新理论", ["熊彼特", "弗里曼", "罗伯特·K·默顿", "丹尼尔贝尔"]),
+    ("水是万物本原", ["泰勒斯", "赫拉克利特", "阿那克西曼德", "德谟克利特"]),
+    ("科学社会学之父", ["罗伯特·K·默顿", "库恩", "波普尔", "贝尔纳"]),
+    ("《增长的极限》由哪个机构", ["罗马俱乐部", "法国科学院", "英国皇家学会", "美国科学院"]),
+    ("地心说由谁", ["托勒密", "哥白尼", "开普勒", "伽利略"]),
+    ("第二次工业革命时间", ["19世纪末到20世纪初", "18世纪60年代", "20世纪中叶", "17世纪"]),
+    ("技术自主论", ["雅克·埃吕尔", "海德格尔", "芒福德", "马尔库塞"]),
+    ("机械唯物主义自然观大致诞生", ["16—18世纪", "古希腊时期", "19世纪末到20世纪初", "20世纪中叶"]),
+)
+
+
+def stable_rng(*parts):
+    seed = "|".join(str(part) for part in parts)
+    return random.Random(seed)
+
+
+def unique(values):
+    result = []
+    seen = set()
+    for value in values:
+        if value and value not in seen:
+            seen.add(value)
+            result.append(value)
+    return result
+
+
+def comparable_text(text):
+    text = re.sub(r"[（(].*?[）)]", "", str(text))
+    text = re.sub(r"[·.\s/、，,：:《》“”\"'—-]", "", text)
+    return text
+
+
+def too_similar(left, right):
+    a = comparable_text(left)
+    b = comparable_text(right)
+    return bool(a and b and (a in b or b in a))
+
+
+def classify_text(text):
+    text = str(text)
+    if any(item in text for item in WORK_HINTS):
+        return "著作"
+    if "学派" in text:
+        return "概念"
+    if any(item in text for item in INSTITUTION_HINTS) and not any(item in text for item in ("法国科学院", "法兰西皇家科学院")):
+        return "机构"
+    if any(item in text for item in ("法国科学院", "法兰西皇家科学院", "罗马俱乐部")):
+        return "机构"
+    if any(item in text for item in TIME_HINTS):
+        return "年代"
+    if any(item in text for item in METHOD_HINTS):
+        return "方法"
+    if any(item in text for item in SCIENCE_THEORY_HINTS):
+        return "科学理论"
+    if any(item in text for item in NATURE_VIEW_HINTS):
+        return "自然观/理论"
+    if any(item in text for item in PERSON_HINTS):
+        return "人物"
+    return "概念"
+
+
+def expected_category(question, correct_text):
+    question = str(question)
+    if "机构" in question or "报告" in question:
+        return "机构"
+    if any(item in question for item in ("哪本书", "哪部书", "哪本著作", "哪部著作")):
+        return "著作"
+    if any(item in question for item in ("作者", "谁", "哪位", "哪个人", "人物", "代表人物", "提出者", "出自谁")):
+        return "人物"
+    if any(item in question for item in ("学者是", "哲学家是", "思想家是", "学者提出", "哲学家提出", "思想家提出")):
+        return "人物"
+    if any(item in question for item in ("时间", "时期", "哪一年", "阶段")) or ("世纪" in question and "《" not in question):
+        return "年代"
+    if "科学基础" in question or "科学技术基础" in question:
+        return "科学理论"
+    if any(item in question for item in ("表现形式", "基本特征", "流派")):
+        return "概念"
+    if any(item in question for item in ("方法", "方向", "模式")):
+        return "方法"
+    if any(item in question for item in ("著作", "作品", "哪本书")):
+        return "著作"
+    if "自然观" in question or "理论" in question:
+        return "自然观/理论"
+    return classify_text(correct_text)
+
+
+def build_category_pools():
+    values = []
+    values.extend(bank.MATCHING_DATA.values())
+    for question in bank.CHOICE_QUESTIONS:
+        values.append(bank.get_correct_text(question))
+        values.extend(question.get("options", {}).values())
+
+    pools = {}
+    for value in unique(str(item) for item in values):
+        pools.setdefault(classify_text(value), []).append(value)
+
+    pools.setdefault("人物", []).extend([
+        "孔德", "泰勒斯", "波普尔", "弗朗西斯·培根", "托勒密", "阿那克西曼德", "恩格斯", "康德",
+        "恩斯特·卡普", "C.P.斯诺", "海德格尔", "罗伯特·K·默顿", "蕾切尔·卡逊", "托夫勒",
+        "马克思", "维特根斯坦", "彭加勒", "拉卡托斯", "库恩", "丹尼尔·贝尔", "熊彼特", "利奥波德",
+        "普利高津", "哈肯", "托姆", "雅克·埃吕尔", "丹皮尔", "毕达哥拉斯", "德谟克利特",
+        "阿里斯塔克", "亚里士多德", "马尔库塞", "贝尔纳", "爱因斯坦",
+    ])
+    pools.setdefault("机构", []).extend([
+        "法国科学院", "英国皇家学会", "瑞典科学院", "美国科学院", "罗马俱乐部", "法兰西皇家科学院",
+    ])
+    pools.setdefault("著作", []).extend([
+        "《自然辩证法》", "《科学：无尽的前沿》", "《寂静的春天》", "《两种文化》",
+        "《十七世纪英格兰的科学、技术与社会》", "《增长的极限》", "《单向度的人》",
+        "《科学史及其与哲学和宗教的关系》", "《第三次浪潮》", "《后工业社会》",
+        "《知识社会》", "《大地的伦理》", "《1844年经济学哲学手稿》",
+    ])
+    pools.setdefault("年代", []).extend([
+        "16—18世纪", "16-18世纪", "17世纪", "18世纪", "19世纪末到20世纪初", "工业革命",
+        "信息革命", "古希腊时期", "近代科学革命时期",
+    ])
+    pools.setdefault("方法", []).extend([
+        "从一般到个别", "从个别到一般", "否定后件式", "演绎-律则模型", "P-TT-EE-P",
+    ])
+    pools.setdefault("自然观/理论", []).extend([
+        "朴素唯物主义自然观", "机械唯物主义自然观", "系统自然观", "生态自然观", "古代原子论",
+        "地心说", "地动说", "耗散结构理论", "技术自主论",
+    ])
+    pools.setdefault("科学理论", []).extend([
+        "能量守恒与转化定律", "细胞学说", "生物进化论", "元素周期律", "爱因斯坦的相对论",
+        "牛顿力学", "热力学第二定律",
+    ])
+    pools.setdefault("概念", []).extend([
+        "信息革命", "计划性", "问题", "权威主义", "技术理性", "国家创新体系", "科学共同体",
+    ])
+    return {category: unique(items) for category, items in pools.items()}
+
+
+def generate_options(question, correct_text, preferred_category=None, existing_options=None):
+    category = preferred_category or expected_category(question, correct_text)
+    for marker, values in TOPIC_OPTION_OVERRIDES:
+        if marker in str(question) and correct_text in values:
+            options = values[:]
+            rng = stable_rng(question, correct_text, "override")
+            rng.shuffle(options)
+            letters = list(existing_options.keys()) if existing_options else ["A", "B", "C", "D"]
+            return {letter: value for letter, value in zip(letters, options)}
+
+    pool = [
+        item for item in CATEGORY_POOLS.get(category, [])
+        if item != correct_text and not too_similar(item, correct_text)
+    ]
+    if len(pool) < 3:
+        pool.extend(
+            item for item in ANSWER_POOL
+            if item != correct_text and item not in pool and not too_similar(item, correct_text)
+        )
+
+    rng = stable_rng(question, correct_text, category)
+    candidates = pool[:]
+    rng.shuffle(candidates)
+    distractors = []
+    for item in candidates:
+        if all(not too_similar(item, selected) for selected in distractors):
+            distractors.append(item)
+        if len(distractors) == 3:
+            break
+    values = distractors + [correct_text]
+    rng.shuffle(values)
+
+    if existing_options:
+        letters = list(existing_options.keys())
+    else:
+        letters = ["A", "B", "C", "D"]
+    return {letter: value for letter, value in zip(letters, values)}
+
+
+def should_rebuild_options(question, correct_text, options):
+    if not options or len(options) < 4:
+        return True
+
+    category = expected_category(question, correct_text)
+    if category not in ("人物", "机构", "年代", "著作", "科学理论"):
+        return False
+
+    same_category_count = sum(1 for value in options.values() if classify_text(value) == category)
+    return same_category_count < 3
+
+
 def choice_question_payload(index, question):
     correct_text = bank.get_correct_text(question)
     options = question.get("options")
-    if options:
-        normalized_options = dict(sorted(options.items()))
+    category = expected_category(question["question"], correct_text)
+    if should_rebuild_options(question["question"], correct_text, options):
+        normalized_options = generate_options(
+            question["question"],
+            correct_text,
+            category,
+            existing_options=options,
+        )
     else:
-        normalized_options = bank.generate_options(correct_text, ANSWER_POOL)
+        normalized_options = dict(sorted(options.items()))
 
     correct_letter = next(
         (letter for letter, text in normalized_options.items() if text == correct_text),
@@ -27,20 +251,24 @@ def choice_question_payload(index, question):
         "options": normalized_options,
         "answer": correct_letter,
         "correctText": correct_text,
+        "category": category,
         "source": question.get("source", ""),
         "note": question.get("note", ""),
     }
 
 
 def matching_question_payload(index, question, answer):
-    options = {"A": answer}
+    category = classify_text(answer)
+    options = generate_options(question, answer, category)
+    correct_letter = next(letter for letter, text in options.items() if text == answer)
     return {
         "id": "matching-{}".format(index),
         "type": "匹配题",
         "question": question,
         "options": options,
-        "answer": "A",
+        "answer": correct_letter,
         "correctText": answer,
+        "category": category,
         "source": "观点-人物/答案匹配题",
         "note": "",
     }
@@ -278,7 +506,13 @@ function shuffle(values) {
 
 function buildQuizOptions(question) {
   if (Object.keys(question.options).length > 1) return question.options;
-  const pool = state.questions.map((item) => item.correctText).filter((item) => item !== question.correctText);
+  let pool = state.questions
+    .filter((item) => item.category === question.category)
+    .map((item) => item.correctText)
+    .filter((item) => item !== question.correctText);
+  if (pool.length < 3) {
+    pool = state.questions.map((item) => item.correctText).filter((item) => item !== question.correctText);
+  }
   const picked = shuffle([...new Set(pool)]).slice(0, 3);
   const values = shuffle([...picked, question.correctText]);
   return Object.fromEntries(values.map((text, index) => [String.fromCharCode(65 + index), text]));
@@ -410,6 +644,7 @@ loadQuestions().catch(() => {
 
 
 ANSWER_POOL = bank.build_answer_pool()
+CATEGORY_POOLS = build_category_pools()
 
 
 def main():
