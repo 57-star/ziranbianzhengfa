@@ -26,7 +26,13 @@ function shuffle(values) {
 
 function buildQuizOptions(question) {
   if (Object.keys(question.options).length > 1) return question.options;
-  const pool = state.questions.map((item) => item.correctText).filter((item) => item !== question.correctText);
+  let pool = state.questions
+    .filter((item) => item.category === question.category)
+    .map((item) => item.correctText)
+    .filter((item) => item !== question.correctText);
+  if (pool.length < 3) {
+    pool = state.questions.map((item) => item.correctText).filter((item) => item !== question.correctText);
+  }
   const picked = shuffle([...new Set(pool)]).slice(0, 3);
   const values = shuffle([...picked, question.correctText]);
   return Object.fromEntries(values.map((text, index) => [String.fromCharCode(65 + index), text]));
