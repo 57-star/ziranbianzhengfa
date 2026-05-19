@@ -12,6 +12,7 @@
     <nav class="tabs" aria-label="功能">
       <button class="tab active" id="bankTab" type="button">所有题库</button>
       <button class="tab" id="quizTab" type="button">随机出题</button>
+      <button class="tab" id="shortTab" type="button">简答题</button>
     </nav>
   </header>
   <main>
@@ -26,6 +27,15 @@
     <section id="quizView" class="hidden">
       <p class="count" id="score">已答 0 题，正确 0 题</p>
       <div id="quizCard"></div>
+    </section>
+    <section id="shortView" class="hidden">
+      <div class="toolbar">
+        <input id="shortSearch" placeholder="搜索简答题题目、答案" autocomplete="off">
+        <button class="secondary" id="clearShortSearch" type="button">清空</button>
+      </div>
+      <p class="count" id="shortCount">正在加载简答题...</p>
+      <div id="shortPractice"></div>
+      <div id="shortList"></div>
     </section>
   </main>
   <script src="./app.js"></script>
