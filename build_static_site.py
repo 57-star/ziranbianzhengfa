@@ -478,7 +478,7 @@ input {
 """
 
 
-JS = """const state = { questions: [], current: null, answered: false, total: 0, right: 0 };
+JS = """const state = { questions: [], quizQueue: [], current: null, answered: false, total: 0, right: 0, round: 1 };
 const bankTab = document.getElementById("bankTab");
 const quizTab = document.getElementById("quizTab");
 const bankView = document.getElementById("bankView");
@@ -518,6 +518,22 @@ function buildQuizOptions(question) {
   return Object.fromEntries(values.map((text, index) => [String.fromCharCode(65 + index), text]));
 }
 
+function resetQuizQueue() {
+  let nextQueue = shuffle(state.questions);
+  if (state.current && nextQueue.length > 1 && nextQueue[0].id === state.current.id) {
+    nextQueue.push(nextQueue.shift());
+  }
+  state.quizQueue = nextQueue;
+}
+
+function nextBaseQuestion() {
+  if (state.quizQueue.length === 0) {
+    if (state.current) state.round += 1;
+    resetQuizQueue();
+  }
+  return state.quizQueue.shift();
+}
+
 function optionHtml(options, correctText = "") {
   return Object.entries(options).map(([letter, text]) => {
     const cls = text === correctText ? "option correct" : "option";
@@ -551,11 +567,12 @@ function renderBank() {
 }
 
 function renderScore() {
-  score.textContent = `已答 ${state.total} 题，正确 ${state.right} 题`;
+  const remaining = state.quizQueue.length;
+  score.textContent = `第 ${state.round} 轮，已答 ${state.total} 题，正确 ${state.right} 题，本轮剩余 ${remaining} 题`;
 }
 
 function showQuizQuestion() {
-  const base = state.questions[Math.floor(Math.random() * state.questions.length)];
+  const base = nextBaseQuestion();
   const options = buildQuizOptions(base);
   const answer = Object.entries(options).find(([, text]) => text === base.correctText)[0];
   state.current = { ...base, options, answer };
@@ -624,6 +641,7 @@ function setView(view) {
 async function loadQuestions() {
   const res = await fetch("./questions.json");
   state.questions = await res.json();
+  resetQuizQueue();
   renderBank();
   renderScore();
 }
