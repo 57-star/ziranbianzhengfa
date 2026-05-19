@@ -35,7 +35,7 @@ h1 {
 }
 .tabs, .actions {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   gap: 8px;
 }
 button, input { font: inherit; }
@@ -145,8 +145,12 @@ input {
   color: var(--bad);
 }
 .actions { margin-top: 12px; }
+.actions.two { grid-template-columns: 1fr 1fr; }
 .secondary { background: #fff; }
 .hidden { display: none; }
+.answer {
+  white-space: pre-wrap;
+}
 @media (min-width: 720px) {
   h1 { font-size: 24px; }
   .options.two-col { grid-template-columns: 1fr 1fr; }

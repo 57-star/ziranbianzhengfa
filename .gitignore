@@ -1,3 +1,8 @@
 __pycache__/
 *.pyc
 localhostrun*.log
+short_answer_source.pdf
+short_answer_extracted.txt
+short_answer_normalized.txt
+short_answer_parsed.json
+short_answer_parse_summary.txt
